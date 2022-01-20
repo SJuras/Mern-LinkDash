@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Dropdown } from './components';
+import { Navbar, Dropdown, Welcome, Social, Marketing, Contact, Footer } from './components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -29,6 +29,11 @@ function App() {
     <Router>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle}/>
+      <Welcome />
+      <Social />
+      <Marketing />
+      <Contact />
+      <Footer />
       <Switch>
 
       </Switch>
