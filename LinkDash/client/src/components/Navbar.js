@@ -6,7 +6,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = ({toggle}) => {
   return(
-    <nav className="w-full relative flex justify-between items-center px-5 py-3 z-40" role="navigation">
+    <nav className="w-full fixed top-0 left-0 flex justify-between items-center px-2 md:px-5 py-3 z-40" role="navigation">
       <Link to="/" className="pl-4">LinkDash</Link>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <HiMenuAlt3 fontSize={24} />
